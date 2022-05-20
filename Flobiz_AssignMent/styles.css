@@ -1,0 +1,460 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background: #f8f9fa !important;
+    font-family: Source Sans Pro !important;
+    line-height: 1.5;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+#landing-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    background: #fff;
+    scroll-behavior: smooth;
+    padding: 30px 70px 0px 70px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.header-container {
+    height: 3.75rem;
+    padding: 0 5.625rem;
+    position: fixed;
+    width: calc(100% - 11.25rem);
+    background: #fbf7f4;
+    z-index: 10;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.header-link {
+    margin: auto 1.25rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #28313b;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.login-header-btn-button {
+    margin: 0 1.25rem;
+    font-family: Source Sans Pro;
+    min-width: 140px;
+    border-radius: 4px !important;
+    background-color: red !important;
+    border: 1px solid red !important;
+    padding: 0 8px !important;
+    color: #fff !important;
+    width: 160px;
+    height: 30px !important;
+    font-weight: 600;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    background-image: url(https://mybillbook.in/static-assets/images/landing-page/bg-landing.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3.75rem;
+}
+
+#landing-container #body .login-register {
+    flex: 0 0 30%;
+}
+
+
+.light-orange-backgorund {
+    background: #fbf7f4;
+}
+
+.register-container {
+    flex: 0 0 30%;
+    position: relative;
+}
+
+div {
+    display: block;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.register-login-padding {
+    padding-left: 40px;
+    height: 565px;
+    position: relative;
+}
+
+#landing-container #body .login-register .title {
+    padding-top: 50px;
+    margin: 0;
+}
+
+#landing-container #body .title {
+    font-size: 36px;
+    font-family: "Poppins";
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.single-line {
+    white-space: nowrap;
+    max-width: 490;
+}
+
+.text-color-orange {
+    color: #db631a !important;
+}
+
+#landing-container #body .login-register .sub-title {
+    font-size: 26px;
+    margin-top: 21px;
+}
+
+
+#landing-container #body .login-register .input-button-container {
+    width: 500px;
+    height: 60px;
+    position: relative;
+    margin-top: 35px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0 / 13%);
+}
+
+#landing-container #body .login-register .input-button-container input,
+#landing-container #body .login-register .input-button-container input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #525252;
+    font-family: Source Sans Pro;
+}
+
+#landing-container #body .login-register .input-button-container input {
+    width: 100%;
+    height: 46px;
+    border: 1px solid #d9d4d4;
+}
+
+.form-control {
+    outline: none;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+#landing-container #body .login-register .input-button-container button {
+    position: absolute;
+    height: 40px !important;
+    width: 180px !important;
+    top: 10px;
+    right: -12px;
+    font-size: 14px !important;
+}
+
+.btn-red {
+    border-radius: 4px !important;
+    background-color: #f00 !important;
+    border: 1px solid #f00 !important;
+    font-size: 12px !important;
+    padding: 0 8px !important;
+    color: #fff !important;
+    width: 160px;
+    height: 30px !important;
+    font-weight: 600;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.postion-absolute {
+    position: absolute;
+}
+
+#landing-container #body .login-register .btn-black {
+    height: 40px !important;
+    font-size: 16px !important;
+    width: 230px !important;
+}
+
+#download-from-web {
+    background: #28313b;
+    border: 1px solid #28313b;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+#landing-container #body .login-register .iso {
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 27px;
+}
+
+
+#landing-container #body .login-register .iso div:first-child {
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+.made_in_india {
+    margin: 0;
+    margin-right: 35px;
+    font-size: 20px;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.hero-image-container {
+    flex: 0 0 70%;
+    justify-content: flex-end;
+}
+
+#landing-container #body .w-250 {
+    width: 250px;
+}
+
+
+#landing-container #body .border-orange {
+    height: 4px;
+    background-color: #ef7338;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+
+#landing-container #body .statistics {
+    background-color: #fff;
+    padding: 25px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#landing-container #body .statistics .stat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#landing-container #body .statistics .stat .text {
+    font-size: 40px;
+    font-weight: 600;
+    color: #db631a;
+}
+
+#landing-container #body .statistics .stat .sub-text {
+    font-size: 20px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+
+/* Footer */
+
+.footer-container {
+    background-color: #ffffff;
+    padding: 35px 90px;
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+footer {
+    display: block;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #ef7338;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mt-custom-1 {
+    margin-top: 1rem;
+}
+
+.email {
+    font-size: 16px;
+}
+
+.contact-no {
+    font-size: 26px;
+}
+
+a {
+    color: #28313b;
+    text-decoration: none;
+}
+
+.whatsapp {
+    display: flex;
+    background: #e7f4f2;
+    align-items: center;
+    height: 40px;
+    width: 160px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 11px;
+    color: #128c7e;
+    margin-top: 25px;
+}
+
+.whatsapp img {
+    margin-right: 14px;
+}
+
+.follow {
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media .link {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 16%);
+    cursor: pointer;
+    margin-right: 1rem;
+}

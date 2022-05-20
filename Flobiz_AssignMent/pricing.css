@@ -1,0 +1,205 @@
+/* Pricing */
+
+
+.pricing-page {
+    padding: 70px 0px;
+}
+
+#landing-container .pricing-page .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #db631a;
+    text-align: center;
+}
+
+
+#landing-container .pricing-page .price-cards {
+    column-gap: 70px;
+    padding: 50px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+#landing-container .pricing-page .price-cards .card:first-child {
+    border: 1px solid #db631a;
+    box-shadow: 2px 2px 4px #db631a;
+    margin-top: 35px;
+}
+
+#landing-container .pricing-page .price-cards .card {
+    height: 356px;
+    width: 255px;
+    border-radius: 30px;
+    /* margin: auto; */
+    text-align: center;
+    padding: 25px 1px;
+    line-height: 0;
+}
+
+#landing-container .pricing-page .price-cards .card:first-child .plan {
+    color: #db631a;
+
+}
+
+#landing-container .pricing-page .price-cards .card .plan {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+
+#landing-container .pricing-page .price-cards .card .card-text {
+    padding: 5px 0px;
+    line-height: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #353452;
+}
+
+.mt-custom-2 {
+    margin-top: 2rem;
+}
+
+.mt-custom-1 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+#landing-container .pricing-page .card .start {
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #28313b;
+}
+
+#landing-container .pricing-page .price-cards .card:first-child .banner-pos {
+    margin-top: 30px;
+}
+
+#landing-container .pricing-page .price-cards .card:first-child .banner-pos .banner {
+    border: 1px solid #db631a;
+    box-shadow: 0px 0px 4px #db631a;
+}
+
+#landing-container .pricing-page .price-cards .card .banner-pos .banner {
+    width: 181px;
+    height: 42px;
+    background-color: white;
+    border-radius: 40px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#landing-container .pricing-page .price-cards .card:first-child .banner-pos .banner .banner-text {
+    color: #db631a;
+}
+
+#landing-container .pricing-page .price-cards .card .banner-pos .banner .banner-text {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "Source Sans Pro";
+    padding: 20px 1px;
+    color: #db631a;
+}
+
+
+#landing-container .pricing-page .card .price .text-color-orange {
+    font-size: 30px;
+}
+
+#landing-container .text-color-orange {
+    font-weight: 600;
+}
+
+
+#landing-container .pricing-page .price-cards .card:nth-child(2) {
+    width: 295px;
+    height: 440px;
+    box-shadow: 0px 0px 4px #485eb0;
+    padding: 15px 1px;
+    border: 1px solid #485eb0;
+}
+
+
+#landing-container .pricing-page .price-cards .card .redtag-pos .red-tag {
+    border: 1px #ed513f;
+    background: #ed513f;
+    width: 140px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    height: 26px;
+    margin: auto;
+    position: relative;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3px;
+    color: white;
+    margin-top: -30px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+#landing-container .pricing-page .price-cards .card:nth-child(2) img {
+    width: 70px;
+    height: 78px;
+}
+
+#landing-container .pricing-page .price-cards .card .plan {
+    color: #485eb0;
+}
+
+#landing-container .pricing-page .price-cards .card .plan {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.pricing-page .card .price .text-color-blue {
+    color: #485eb0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#landing-container .pricing-page .price-cards .card:nth-child(2) .banner-pos {
+    margin-top: 63px;
+}
+
+#landing-container .pricing-page .price-cards .card:nth-child(2) .banner-pos .banner {
+    border: 1px solid #485eb0;
+    box-shadow: 0px 0px 4px #485eb0;
+}
+
+#landing-container .pricing-page .price-cards .card .banner-pos .banner {
+    width: 181px;
+    height: 42px;
+    background-color: white;
+    border-radius: 40px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#landing-container .pricing-page .price-cards .card:nth-child(2) .banner-pos .banner .banner-text {
+    color: #485eb0;
+}
+
+#landing-container .pricing-page .price-cards .card .banner-pos .banner .banner-text {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "Source Sans Pro";
+    padding: 20px 1px;
+    color: #db631a;
+}

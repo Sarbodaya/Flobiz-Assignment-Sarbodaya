@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pricing.css">
+</head>
+
+
+
+<body id="page-container" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+  <div id="landing-container">
+    <div id="header" class="header-container d-flex justify-content-space-between align-items-center">
+      <div class="cursor-pointer d-flex align-items-center" onclick="navigateToHome()">
+        <img src="https://mybillbook.in/static-assets/images/mybillbook-logo.webp" alt="myBillBook logo" loading="lazy" height="26px">
+      </div>
+      <div class="d-flex">
+        <a id="why_billbook_nav_link" class="header-link cursor-pointer" href="#why-flobooks-scroll" onclick="pushEvent('d_landing_click','why_flobooks')">Why Use myBillBook?</a>
+        <a id="who_is_it_for_nav_link" class="header-link cursor-pointer" href="#who-is-it-for-scroll" onclick="pushEvent('d_landing_click','Who_is_it_For')">Who is it For?</a>
+        <a id="online_store_nav_link" class="header-link cursor-pointer" href="#online-store-scroll" onclick="pushEvent('d_landing_click','Online_Store')">Online Store</a>
+        <a href="https://mybillbook.in/pos" class="header-link cursor-pointer" onclick="pushEvent('d_landing_click','pos');">Retail POS</a>
+        <a href="https://mybillbook.in/pricing-plans#pricing" class="header-link cursor-pointer" onclick="pushEvent('d_landing_click','pricing_plans');">Pricing</a>
+        <a id="Faq_nav_link" class="header-link cursor-pointer" href="#faqs-scroll" onclick="pushEvent('d_landing_click','FAQs')">FAQs</a>
+        <button class="login-header-btn-button mr-0" onclick="showLogin(false); showLoginEvent('Login/Register', 'login',trackingEventAttributeType)">
+          Login
+        </button>
+      </div>
+    </div>
+    <div id="body" class="main-content">
+      <!-- Login/Register -->
+      <div class="d-flex login-register light-orange-backgorund">
+        <div class="register-container">
+          <div class="position-absolute">
+            <div class="register-login-padding">
+              <h1 class="title">
+                <div class="single-line">
+                  India’s No.1
+                  <span class="text-color-orange">Accounting</span> and
+                  <span class="text-color-orange">GST Billing</span>
+                </div>
+                <div>Software</div>
+              </h1>
+              <h2 class="sub-title d-flex align-items-center">
+                Create GST-Compliant Invoices with the Best Billing Software
+              </h2>
+              <div class="input-button-container">
+                <input type="number" oninput="maxLengthCheck(this.id,this.maxLength)" class="form-control" placeholder="Enter Mobile Number" maxlength="10" id="phone_number" style="width : 526px; height: 60px;">
+                <button class="btn-red log-reg-btn" onclick="
+                      showLogin(true);
+                      showLoginEvent('Login/Register', 'first_fold',trackingEventAttributeType)
+                    ">
+                  Get Free Trial
+                </button>
+              </div>
+              <div class="postion-absolute bottom-0">
+                <div class="d-flex">
+                  <button class="btn-black ml-1 " id="download-from-web">
+                    Download Desktop App
+                    <img src="https://mybillbook.in/static-assets/images/download.webp" alt="download icon" class="ml-15">
+                  </button>
+                </div>
+
+                <div class="iso">
+                  <div class="made_in_india">Made with ❤️ in India</div>
+                  <div class="d-flex align-items-center">
+                    <img src="https://mybillbook.in/static-assets/images/landing-page/iso-black.webp" alt="iso certified" loading="lazy">
+                  </div>
+                  <div class="d-flex align-items-center ml-3">
+                    <img src="https://mybillbook.in/static-assets/images/landing-page/customer choice.svg" alt="iso certified" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-container d-flex justify-content-end" title="Gst Billing software">
+          <img src="https://mybillbook.in/static-assets/images/landing-page/landing-hero-image.webp" alt="Download Billing Software for PC &amp; Mobile for free">
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="border-orange w-250"></div>
+      <div class="statistics">
+        <div class="stat">
+          <div class="text m-0">1,00,000+</div>
+          <div class="m-0 sub-text">Businesses Trust us</div>
+        </div>
+        <div class="stat">
+          <div class="text m-0">30,00,000+</div>
+          <div class="m-0 sub-text">Invoices created</div>
+        </div>
+        <div class="stat">
+          <div class="text m-0">5000+</div>
+          <div class="m-0 sub-text">Cities &amp; Towns in India</div>
+        </div>
+        <div class="stat">
+          <div class="text m-0 d-flex align-items-center">
+            4.5<img src="https://mybillbook.in/static-assets/images/landing-page/star.webp" alt="star icon" height="32" width="32" class="ml-2" loading="lazy">
+          </div>
+          <div class="m-0 sub-text">Rating on Google Play</div>
+        </div>
+      </div>
+
+      <div class="pricing-page" id="pricing">
+        <div class="title">Affordable Pricing Plans</div>
+        <div class="price-cards d-flex justify-content-center">
+          <div class="card">
+            <img src="https://mybillbook.in/static-assets/images/pricing%20page/goldencrown.svg" alt="" loading="lazy">
+            <h3 class="plan">Diamond Plan</h3>
+            <div class="card-text">
+              <div class="text mt-custom-2">2 Businesses</div>
+              <div class="text mt-custom-1">3 Users</div>
+              <div class="text mt-custom-1">Mobile &amp; Web</div>
+              <div class="text mt-custom-1">Unlimited Device Logins</div>
+            </div>
+            <div class="start mt-3">Starting from</div>
+            <div class="price mt-3">
+              <span class="text-color-orange">₹ 142</span><span style="font-weight: 600; font-size: 14px">/month </span><span style="font-size: 12px; font-weight: 500">(billed yearly)</span>
+            </div>
+            <div class="banner-pos mt-custom-1">
+              <div class="banner">
+                <div class="banner-text" onclick="showLogin(false); showLoginEvent('Login/Register', 'pricing_fold_diamond',trackingEventAttributeType)">
+                  TRY FOR FREE
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="redtag-pos">
+              <div class="red-tag">
+                <p>Most Popular</p>
+              </div>
+            </div>
+            <img src="https://mybillbook.in/static-assets/images/pricing page/bluecrown.svg" alt="" loading="lazy">
+            <h3 class="plan">Platinum Plan</h3>
+            <div class="card-text">
+              <div class="text mt-custom-1">2 Businesses</div>
+              <div class="text mt-custom-1">3 Users</div>
+              <div class="text mt-custom-1">Mobile &amp; Web</div>
+              <div class="text mt-custom-1">Unlimited Device Logins</div>
+              <div class="extra-text mt-custom-1">Offline Desktop App</div>
+            </div>
+            <div class="start mt-custom-2">Starting from</div>
+            <div class="price mt-3">
+              <span class="text-color-blue">₹ 242</span><span style="font-weight: 600; font-size: 14px">/month </span><span style="font-size: 12px; font-weight: 500">(billed yearly)</span>
+            </div>
+            <div class="banner-pos mt-custom-1">
+              <div class="banner">
+                <div class="banner-text" onclick="showLogin(false); showLoginEvent('Login/Register', 'pricing_fold_platinum','pricing')">
+                  TRY FOR FREE
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://mybillbook.in/static-assets/images/pricing page/greencrown.svg" alt="" loading="lazy">
+            <h3 class="plan">Enterprise Plan</h3>
+            <div class="card-text">
+              <div class="text mt-custom-2">Unlimited Businesses</div>
+              <div class="text mt-custom-1">Unlimited Users</div>
+              <div class="text mt-custom-1">Mobile &amp; Web</div>
+              <div class="text mt-custom-1">Unlimited Device Logins</div>
+              <div class="text mt-custom-1">Offline Desktop App</div>
+              <div class="text mt-custom-1">Unlimited E-Way Bills</div>
+              <div class="text mt-custom-1">Generate and Print Barcode</div>
+              <div class="extra-text mt-custom-1">POS Billing</div>
+            </div>
+            <div class="banner-pos mt-custom-1">
+              <div class="banner">
+                <div class="banner-text" onclick="showLogin(false);showLoginEvent('Login/Register', 'pricing_fold_custom',trackingEventAttributeType)">
+                  Contact us for pricing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-container">
+        <footer-component class="w-100">
+          <div class="d-flex w-100 flex-wrap">
+            <div class="bottom-section">
+              <div class="left-section">
+                <div class="get-in-touch">
+                  <div class="title my-1">Get in touch</div>
+                  <div class="email mt-custom-1">support@flobiz.in</div>
+                  <div class="contact-no">+91 74004 17400</div>
+                  <div class="d-flex">
+                    <a href="https://api.whatsapp.com/send?phone=917400417400" target="_blank" onclick="pushEvent('Chat', 'whatsapp')" class="text-decoration-none">
+                      <div class="whatsapp">
+                        <img src="https://mybillbook.in/static-assets/images/whatsapp-1.webp" alt="whatsapp logo" loading="lazy">
+                        <div>WhatsApp us</div>
+                      </div>
+                    </a>
+
+                    <!-- <div class="chat cursor-pointer" onclick="openChat()">
+                      <img src="/static-assets/icons/chat-icon.webp" loading="lazy" />
+                      <div>Chat with us</div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="follow">
+                  <div class="title m-0">Follow us</div>
+                  <div class="social-media d-flex">
+                    <a class="link mr-1" onclick="pushEvent('Social links', 'youtube')" href="https://www.youtube.com/channel/UCSGJlHTQCdQS_OGxCk6xJsw" target="_blank">
+                      <img src="https://mybillbook.in/static-assets/images/landing-page/youtube.webp" alt="youtube logo " loading="lazy">
+                    </a>
+                    <a class="link mr-1" onclick="pushEvent('Social links', 'facebook')" href="https://www.facebook.com/mybillbook.in" target="_blank">
+                      <img src="https://mybillbook.in/static-assets/images/landing-page/facebook_Icon.webp" alt="facebook logo " loading="lazy">
+                    </a>
+                    <a class="link mr-1" onclick="pushEvent('Social links', 'instagram')" href="https://www.instagram.com/mybillbookofficial/" target="_blank">
+                      <img src="https://mybillbook.in/static-assets/images/landing-page/instagram.webp" alt="instagram logo " loading="lazy">
+                    </a>
+                    <a class="link mr-1" onclick="pushEvent('Social links', 'twitter')" href="https://twitter.com/FloBizOfficial" target="_blank">
+                      <img src="https://mybillbook.in/static-assets/images/landing-page/twitter-icon.webp" alt=" twitter icon" loading="lazy">
+                    </a>
+                    <a class="link" onclick="pushEvent('Social links', 'linkedin')" href="https://www.linkedin.com/company/flobiz/" target="_blank">
+                      <img src="https://mybillbook.in/static-assets/images/landing-page/linkedin-icon.webp" alt=" linkedin icon " loading="lazy">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="links-section">
+                <div class="title my-1">Information</div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/web/cancelation-policy" target="_blank" onclick="pushEvent('Footer', 'refund_policy')">Refund Policy</a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/web/privacy-policy" target="_blank" onclick="pushEvent('Footer', 'privacy_policy')">Privacy Policy</a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/web/terms" target="_blank" onclick="pushEvent('Footer', 'tnc')">
+                    Terms &amp; Conditions
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a href="https://www.facebook.com/groups/flobooksbusinessgroup" target="_blank" class="text-decoration-none" onclick="pushEvent('Footer', 'fbg')">
+                    FloBiz Business Groups
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a href="https://forms.gle/TfbcRVToiUEPA2Yu6" target="_blank" class="text-decoration-none" onclick="pushEvent('Footer', 'license_keys')">
+                    License keys
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/contact-us/" target="_blank" onclick="pushEvent('Footer', 'customer_care')">
+                    Customer care
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a href="https://mybillbook.in/s/partner-with-us/" target="_blank" class="text-decoration-none font-black" onclick="pushEvent('Footer', 'become_reseller')">
+                    Become Reseller
+                  </a>
+                </div>
+              </div>
+              <div class="links-section">
+                <div class="title my-1">&nbsp;</div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/" target="_blank" onclick="pushEvent('Footer', 'blogs')">
+                    Blog
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/s/" target="_blank" onclick="pushEvent('Footer', 'service_pages')">
+                    Service Pages
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/coupons-offer-referral-code/" target="_blank" onclick="pushEvent('Footer', 'mybillbook_coupon_code')">
+                    myBillBook Coupon Code
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/s/service-pack/" target="_blank" onclick="pushEvent('Footer', 'service_pack')">
+                    Service pack
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/pricing-plans#pricing" target="_blank" onclick="pushEvent('Footer', 'Pricing Plans')">
+                    Pricing Plans
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/sitemap.html" target="_blank" onclick="pushEvent('Footer', 'HTML Sitemap')">
+                    HTML Sitemap
+                  </a>
+                </div>
+              </div>
+
+              <div class="links-section">
+                <div class="title my-1">&nbsp;</div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/invoicing-software" target="_blank" onclick="pushEvent('Footer', 'Invoicing Software')">Invoicing Software</a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/inventory-management-software" target="_blank" onclick="pushEvent('Footer', 'Inventory Management Software')">Inventory Management Software
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/pos" target="_blank" onclick="pushEvent('Footer', 'Retail POS Software')">
+                    Retail POS Software
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/accounting-software-for-small-business" target="_blank" onclick="pushEvent('Footer', 'Accounting Software')">
+                    Accounting Software
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/s/billing-software-for-pc/" target="_blank" onclick="pushEvent('Footer', 'Billing Software For PC')">
+                    Billing Software For PC
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/s/offline-billing-software/" target="_blank" onclick="pushEvent('Footer', 'Offline Billing Software')">
+                    Offline Billing Software
+                  </a>
+                </div>
+              </div>
+              <div class="links-section">
+                <div class="title my-1">Trending Articles</div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/sac-code-list" target="_blank" onclick="pushEvent('Footer', 'sac_code')">SAC Code</a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/delivery-challan-meaning-and-format/" target="_blank" onclick="pushEvent('Footer', 'delivery_challan')">Delivery Challan</a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/credit-note/" target="_blank" onclick="pushEvent('Footer', 'credit_note_format')">
+                    Credit Note Format
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/debit-note-guide/" target="_blank" onclick="pushEvent('Footer', 'debit_note_format')">
+                    Debit Note Format
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/proforma-invoice-template/" target="_blank" onclick="pushEvent('Footer', 'performa_invoice_format')">
+                    Proforma Invoice Format
+                  </a>
+                </div>
+                <div class="cursor-pointer mt-custom-1">
+                  <a class="footer-nav" +="" href="https://mybillbook.in/blog/direct-and-indirect-expenses/" target="_blank" onclick="pushEvent('Footer', 'Direct Indirect Expenses')">
+                    Direct Indirect Expenses
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer-component>
+      </div>
+
+
+      <!-- download desktop modal code -->
+      <!-- [ngClass]="{ in: visibleAnimate, 'd-block': visible }"
+[ngStyle]="{
+opacity: visibleAnimate ? 1 : 0
+}" -->
+
+
+      <script type="text/javascript" id="">
+        ! function(b, e, f, g, a, c, d) {
+          b.fbq || (a = b.fbq = function() {
+            a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments)
+          }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d))
+        }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+        fbq("init", "725198534688936");
+        fbq("track", "PageView");
+      </script>
+      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=725198534688936&amp;ev=PageView&amp;noscript=1"></noscript>
+
+      <script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-418455208"></script>
+      <script type="text/javascript" id="">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments)
+        }
+        gtag("js", new Date);
+        gtag("config", "AW-418455208");
+      </script>
+      <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon978781626975"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon147286555062" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=17555731&amp;tm=gtm002&amp;Ver=2&amp;mid=c7a00b98-8c80-4b70-bd90-d246a091a4a9&amp;sid=2ee05a60d69311eca530c1a484ceac79&amp;vid=2ee10890d69311ecb42c1b048e1d63e5&amp;vids=0&amp;uach=pv%3D10.0.0&amp;pi=918639831&amp;lg=en-GB&amp;sw=1536&amp;sh=864&amp;sc=24&amp;tl=GST%20Billing%20Software%20Free%20Download%20%7C%20Best%20GST%20Bill%20Software%20for%20Desktop%20and%20Mobile%20-%20myBillBook&amp;kw=billing%20software,%20billing,%20gst%20billing,%20bill%20software,%20invoice%20software,%20free%20billing%20software,%20easy%20billing,%20tally%20alternative,%20mobile%20billing,%20gst%20software,%20billing%20book,%20software%20billing&amp;p=https%3A%2F%2Fmybillbook.in%2F&amp;r=https%3A%2F%2Fwww.google.com%2F&amp;lt=3555&amp;mtp=10&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=701239"></div>
+</body>
+
+
+
+</html>
